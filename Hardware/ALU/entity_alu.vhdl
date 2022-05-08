@@ -15,10 +15,10 @@ entity alu is
     );
   
   Port (
-    x, y     : in  STD_LOGIC_VECTOR(N downto 0);     -- Operands
+    x, y     : in  STD_LOGIC_VECTOR(N-1 downto 0);     -- Operands
     func_sel  : in  function_select;                  -- selects numerical (ADD, SUB, MUL ...) or logical (AND, NAND, ...) Operation Mode | Defined in Package
     shift_number: in natural;
-    output   : out  STD_LOGIC_VECTOR(N downto 0);    -- Output
+    output   : out  STD_LOGIC_VECTOR(N-1 downto 0);    -- Output
     carry_out : out std_logic      
     );
 end alu; 
