@@ -6,7 +6,7 @@ library work;
 use work.package_types.all;
 
 ---------------------------
-------- 16 Bit ALU --------
+-------- N Bit ALU --------
 ---------------------------
 
 entity alu is
